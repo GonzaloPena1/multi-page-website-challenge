@@ -5,7 +5,8 @@
   --main-bg-color: #3a3a3a;
   --main-color: white;
   --spacing-0: 0;
-  --button-main-color: #777575;
+  --button-main-color: #e68b1f;
+  --button-hover-color: #f7b15c;
 }
 * {
   box-sizing: border-box;
@@ -35,6 +36,9 @@ header {
   display: flex;
   justify-content: start;
 }
+.logo:hover {
+  cursor: pointer;
+}
 
 nav ul {
   list-style: none;
@@ -53,6 +57,9 @@ nav ul li a {
   color: var(--main-color);
   text-decoration: none;
   font-weight: bold;
+}
+nav ul li a:hover {
+  color: var(--button-hover-color);
 }
 .search-bar {
   display: flex;
@@ -107,6 +114,10 @@ img {
   }
 }
 /* Section products */
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +151,9 @@ img {
   padding-right: 0px;
   padding-bottom: 35px;
   padding-left: 25px;
+}
+.button-product:hover {
+  background: var(--button-hover-color);
 }
 /* Section Partners slider*/
 /* Animation*/
@@ -265,15 +279,51 @@ img {
   margin: 0 0 20px;
 }
 /* Footer */
+
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   left: var(--spacing-0);
   bottom: var(--spacing-0);
   width: 100%;
   background-color: var(--main-bg-color);
   color: var(--main-color);
-  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
+}
+.copyright {
+  text-align: start;
+  font-weight: bold;
+}
+
+.noDecoration {
+  margin-left: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.noDecoration:hover {
+  color: var(--button-hover-color);
+}
+/*
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: var(--spacing-0);
+  bottom: var(--spacing-0);
+  width: 100%;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
   margin-top: 50px;
 }
+.noDecoration,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+*/
 
 /* On smaller screens, decrease text size */
 /* Section banner silde-show */
