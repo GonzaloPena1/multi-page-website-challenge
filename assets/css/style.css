@@ -103,13 +103,13 @@ img {
   }
 }
 /* Section services */
-.services-container {
+.product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.product a {
+.product-img a {
   max-width: 100px;
   max-height: 100px;
 }
