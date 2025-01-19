@@ -141,6 +141,16 @@ img {
   padding-left: 20px;
 }
 
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
 .button-product {
   display: flex;
   border-radius: 20px;
@@ -311,11 +321,21 @@ footer {
 .noDecoration:hover {
   color: var(--button-hover-color);
 }
+#scrollToTopBtn {
+  background-color: var(--button-main-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
 
-/* On smaller screens, decrease text size */
-/* Section banner silde-show */
-@media only screen and (max-width: 600px) {
-  .text {
-    font-size: 11px;
+  /* On smaller screens, decrease text size */
+  /* Section banner silde-show */
+  @media only screen and (max-width: 600px) {
+    .text {
+      font-size: 11px;
+    }
   }
 }
