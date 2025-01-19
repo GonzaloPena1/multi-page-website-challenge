@@ -1,11 +1,11 @@
 .container h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: var(--spacing-50);
+  margin-bottom: var(--spacing-50);
   text-align: center;
 }
 .faq {
   width: 50%;
-  margin: 0 auto;
+  margin: var(--spacing-0) auto;
 }
 
 details {

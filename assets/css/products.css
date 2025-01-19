@@ -1,4 +1,4 @@
 /* Section products */
 .product-container {
-  margin-top: 50px;
+  margin-top: var(--spacing-50);
 }

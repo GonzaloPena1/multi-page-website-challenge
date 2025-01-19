@@ -30,7 +30,8 @@ form {
       width: 100%;
       border: 0;
       border-radius: 4px;
-      padding: 20px 20px 20px 50px;
+      padding: var(--spacing-20) var(--spacing-20) var(--spacing-20)
+        var(--spacing-50);
       background: #ffffff;
 
       &:focus {
@@ -45,9 +46,9 @@ form {
 
       &:valid {
         background: url(../images/check.png);
-        background-size: 20px;
+        background-size: var(--spacing-20);
         background-repeat: no-repeat;
-        background-position: 20px 20px;
+        background-position: var(--spacing-20) var(--spacing-20);
         & + label {
           opacity: 0;
         }
@@ -62,16 +63,18 @@ form {
 
       &:invalid:focus:not(:placeholder-shown) {
         & ~ .requirements {
-          max-height: 200px;
-          padding: 0 30px 20px 50px;
+          max-height: var(--spacing-200);
+          padding: var(--spacing-0) var(--spacing-30) var(--spacing-20)
+            var(--spacing-50);
         }
       }
     }
 
     .requirements {
-      padding: 0 30px 0 50px;
+      padding: var(--spacing-0) var(--spacing-30) var(--spacing-0)
+        var(--spacing-50);
       color: #999;
-      max-height: 0;
+      max-height: var(--spacing-0);
       transition: 0.28s;
       overflow: hidden;
       color: red;
@@ -82,12 +85,12 @@ form {
   input[type="submit"] {
     display: block;
     width: 100%;
-    margin: 20px 0;
+    margin: var(--spacing-20) var(--spacing-0);
     border-radius: 4px;
     background: var(--button-main-color);
     color: white;
-    border: 0;
-    padding: 20px;
+    border: var(--spacing-0);
+    padding: var(--spacing-20);
     font-size: 1.2rem;
   }
 
@@ -97,10 +100,11 @@ form {
 
   textarea {
     width: 100%;
-    border: 0;
+    border: var(--main-color);
     border-radius: 4px;
-    padding: 20px 20px 20px 50px;
-    background: #ffffff;
+    padding: var(--spacing-20) var(--spacing-20) var(--spacing-20)
+      var(--spacing-50);
+    background: var(--main-color);
 
     &:focus {
       outline: 0;
@@ -108,7 +112,7 @@ form {
       background: rgb(226, 245, 251);
 
       & + label {
-        opacity: 0;
+        opacity: var(--spacing-0);
       }
     }
   }
