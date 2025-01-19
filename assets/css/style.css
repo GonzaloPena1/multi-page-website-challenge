@@ -64,6 +64,7 @@ nav ul li a:hover {
 .search-bar {
   display: flex;
   justify-content: space-around;
+  border-radius: 4px;
   padding: 6px;
   border: none;
   margin-top: 8px;
@@ -310,28 +311,10 @@ footer {
 .noDecoration:hover {
   color: var(--button-hover-color);
 }
-/*
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  left: var(--spacing-0);
-  bottom: var(--spacing-0);
-  width: 100%;
-  background-color: var(--main-bg-color);
-  color: var(--main-color);
-  margin-top: 50px;
-}
-.noDecoration,
-a:link,
-a:visited {
-  text-decoration: none;
-}
-*/
 
 /* On smaller screens, decrease text size */
 /* Section banner silde-show */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .text {
     font-size: 11px;
   }
